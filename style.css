@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+.parent {
+  height: 60%;
+  background-color: lightgray;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.price-tables {
+  display: flex;
+  justify-content: space-evenly;
+}
+.box {
+  width: 25%;
+  background-color: #fff;
+}
+h1,
+p,
+span {
+  text-align: center;
+}
+h1 {
+  background-color: rgb(57, 188, 206);
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.price {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: rgb(78, 75, 75);
+}
+.per-month {
+  font-size: 1.2rem;
+}
+.text > span {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: lightgray;
+  height: 0.5rem;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text > .span1 {
+  width: 90%;
+}
+.text > .span2 {
+  width: 60%;
+  /* text-align: center; */
+}
+.text > .span3 {
+  width: 70%;
+}
+.text > .span4 {
+  width: 90%;
+  margin-bottom: 0.5rem;
+}
+.progress-dialog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 87%;
+  background-color: #fff;
+  margin: 0 auto;
+  height: 35%;
+}
+.progress {
+  width: 90%;
+}
+.progress > span {
+  float: right;
+}
+.progress-bar {
+  position: relative;
+  height: 0.5rem;
+  width: 90%;
+  background-color: lightgray;
+  z-index: 1;
+  border-radius: 10px;
+}
+.box:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.progress-show {
+  border-radius: 10px;
+
+  position: absolute;
+  z-index: 2;
+  height: 0.5rem;
+  width: 5%;
+  background-color: rgb(57, 188, 206);
+  transition: width 0.6s ease-in;
+}
